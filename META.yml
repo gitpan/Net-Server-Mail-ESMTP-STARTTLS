@@ -1,0 +1,22 @@
+---
+name: Net-Server-Mail-ESMTP-STARTTLS
+version: 0.01
+author:
+  - 'Dan Moore <dan@moore.cx>'
+abstract: The great new Net::Server::Mail::ESMTP::STARTTLS!
+license: perl
+resources:
+  repository: git://github.com/mgrdcm/net-server-mail-esmtp-starttls.git
+requires:
+  IO::Socket::SSL: 0
+  Net::Server::Mail::ESMTP::Extension: 0
+build_requires:
+  Test::More: 0
+provides:
+  Net::Server::Mail::ESMTP::STARTTLS:
+    file: lib/Net/Server/Mail/ESMTP/STARTTLS.pm
+    version: 0.01
+generated_by: Module::Build version 0.32
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
