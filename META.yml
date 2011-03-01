@@ -1,22 +1,24 @@
 ---
-name: Net-Server-Mail-ESMTP-STARTTLS
-version: 0.01
+abstract: 'Simple implementation of STARTTLS (RFC3207) for Net::Server::Mail::ESMTP'
 author:
   - 'Dan Moore <dan@moore.cx>'
-abstract: The great new Net::Server::Mail::ESMTP::STARTTLS!
-license: perl
-resources:
-  repository: git://github.com/mgrdcm/net-server-mail-esmtp-starttls.git
-requires:
-  IO::Socket::SSL: 0
-  Net::Server::Mail::ESMTP::Extension: 0
 build_requires:
   Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3624'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Net-Server-Mail-ESMTP-STARTTLS
 provides:
   Net::Server::Mail::ESMTP::STARTTLS:
     file: lib/Net/Server/Mail/ESMTP/STARTTLS.pm
-    version: 0.01
-generated_by: Module::Build version 0.32
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+    version: 0.02
+requires:
+  IO::Socket::SSL: 0
+  Net::Server::Mail::ESMTP::Extension: 0
+resources:
+  repository: git://github.com/mgrdcm/net-server-mail-esmtp-starttls.git
+version: 0.02
